@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú de Búsquedas</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="1.2styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+    <div class="container mt-5">
+        <h1 class="text-center font-weight-bold">Menú de Búsquedas</h1>
+
+        <div class="text-center mt-3">
+            <label for="minValue">Ingresa el valor mínimo:</label>
+            <input type="number" id="minValue" placeholder="Valor mínimo" class="form-control mb-2">
+            <label for="minValue">Ingresa el valor máximo:</label>
+            <input type="number" id="maxValue" placeholder="Valor máximo" class="form-control mb-2">
+            <button class="btn btn-custom mb-2" onclick="realizarBusqueda('lineal')">Búsqueda Lineal</button>
+            <button class="btn btn-custom mb-2" onclick="realizarBusqueda('binariaIterativa')">Búsqueda Binaria
+                Iterativa</button>
+            <button class="btn btn-custom mb-2" onclick="realizarBusqueda('binariaRecursiva')">Búsqueda Binaria
+                Recursiva</button>
+            <button class="btn btn-custom mb-2" onclick="clearResults()">Limpiar</button>
+            <button class="btn btn-custom mb-2"
+                onclick="navigateTo('indexParcial1.html')">Regresar</button>
+        </div>
+
+        <div id="contenidoBusqueda" class="mt-5">
+            <div class="table-responsive mt-5">
+                <table class="table table-bordered">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>Prueba</th>
+                            <th>Valor Máximo</th>
+                            <th>Valor a Buscar</th>
+                            <th>Tiempo Tomado (ms)</th>
+                            <th>Posición</th>
+                        </tr>
+                    </thead>
+                    <tbody id="resultadosTabla">
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="mt-5">
+                <canvas id="grafica"></canvas>
+            </div>
+        </div>
+        <div class="text-center mt-5">
+            <h4>Integrantes del Equipo:</h4>
+            <p>Hernández Ruiz Haydee Michelle, Montoya Garza Luis Ángel, Rueda Martínez Alison Michelle, Silva Sánchez
+                Yamilka Arely</p>
+        </div>
+        <script src="1.2main.js"></script>
+
+    </div>
+
+</body>
+
+</html>

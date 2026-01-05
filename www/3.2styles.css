@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #ff88888e !important;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+.btn-custom {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: 2px solid #000000;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.btn-custom:hover {
+    background-color: #ff6b6b;
+    border-color: #000000;
+}
+
+.btn-custom:active {
+    background-color: #ffffff;
+    border-color: #646464;
+}
+
+@media (max-width: 768px) {
+    .btn-custom {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .col-6 {
+        margin-bottom: 10px;
+    }
+
+    #adjacencyMatrixTable {
+        font-size: 14px;
+        overflow-x: auto;
+        width: 100%;
+    }
+
+    #adjacencyMatrixTable th,
+    #adjacencyMatrixTable td {
+        padding: 5px;
+    }
+}
+
+#graphContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    border: 1px solid black;
+}
+
+#graph {
+    width: 100%;
+    height: 100%;
+}
+
+#adjacencyMatrixTable {
+    background-color: #f2f2f2;
+    border: 2px solid #d0d0d0;
+    margin-top: 20px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#adjacencyMatrixTable th {
+    background-color: #ff6b6b;
+    color: #ffffff;
+    text-align: center;
+}
+
+#adjacencyMatrixTable td {
+    color: #333333;
+    text-align: center;
+    padding: 8px;
+    border: 1px solid #d0d0d0;
+}
+
+#adjacencyMatrixTable td.zero-cell {
+    background-color: #e6e4e4 !important;
+    color: #999 !important;
+}
+
+#adjacencyMatrixTable td.infinity-cell {
+    background-color: #f7d7d7;
+    color: #999;
+}

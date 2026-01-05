@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parcial 2: Análisis de la Eficiencia de Algoritmos de Ordenamiento</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #f4ffad;
+        }
+
+        h1 {
+            font-weight: bold;
+        }
+
+        .subtitle {
+            font-size: 1.5rem;
+            margin-top: 10px;
+        }
+
+        .btn-custom {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #ffffff;
+            color: rgb(0, 0, 0);
+            border: 2px solid #000000;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, border-color 0.3s ease;
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        .btn-custom:hover {
+            background-color: #ffff43;
+            border-color: #000000;
+        }
+
+        .btn-custom:active {
+            background-color: #ffffff;
+            border-color: #ffffff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center font-weight-bold">Parcial 2</h1>
+        <p class="text-center subtitle">Análisis de la Eficiencia de Algoritmos de Ordenamiento</p>
+        <div class="text-center mt-3">
+            <button class="btn btn-custom" onclick="navigateTo('2.1index.html')">Ordenamiento Burbuja</button>
+            <button class="btn btn-custom" onclick="navigateTo('2.2index.html')">Ordenamiento
+                Inserción</button>
+            <button class="btn btn-custom" onclick="navigateTo('2.3index.html')">Ordenamiento Selección</button>
+            <button class="btn btn-custom" onclick="navigateTo('2.4index.html')">Ordenamiento Mergesort</button>
+            <button class="btn btn-custom" onclick="navigateTo('2.5index.html')">Ordenamiento Quicksort</button>
+            <button class="btn btn-custom" onclick="navigateTo('2.6index.html')">Comparacion de Ordenamientos</button>
+            <button class="btn btn-custom" onclick="navigateTo('indexPrincipal.html')">Regresar</button>
+        </div>
+        <div class="text-center mt-5">
+            <h4>Integrantes del Equipo:</h4>
+            <p>Hernández Ruiz Haydee Michelle, Montoya Garza Luis Ángel, Rueda Martínez Alison Michelle, Silva Sánchez
+                Yamilka Arely</p>
+        </div>
+    </div>
+    <script>
+        function navigateTo(page) {
+            window.location.href = page;
+        }
+
+    </script>
+</body>
+
+</html>

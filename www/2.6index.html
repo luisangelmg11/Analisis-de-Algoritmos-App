@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pruebas de Ordenamiento</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="2.6styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+    <div class="container my-5">
+        <h1 class="text-center">Pruebas de Ordenamiento</h1>
+        <div class="text-center mb-4">
+            <label for="minValue">Ingresa el valor mínimo:</label>
+            <input type="number" id="minValue" placeholder="Valor mínimo" class="form-control mb-2">
+            <label for="maxValue">Ingresa el valor máximo:</label>
+            <input type="number" id="maxValue" placeholder="Valor máximo" class="form-control mb-2">
+            <button class="btn btn-custom mb-2" id="startBtn">Iniciar Pruebas</button>
+            <button class="btn btn-custom mb-2" id="cleanBtn">Limpiar</button>
+            <button class="btn btn-custom mb-2" onclick="navigateTo('indexParcial2.html')">Regresar</button>
+        </div>
+
+        <h3 class="text-center">Resultados</h3>
+        <div class="table-responsive">
+            <table class="table table-bordered mt-3">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>Número de Prueba</th>
+                        <th>Número de Elementos en el Arreglo</th>
+                        <th>Tiempo Insertion Sort (ms)</th>
+                        <th>Tiempo Bubble Sort (ms)</th>
+                        <th>Tiempo Selection Sort (ms)</th>
+                        <th>Tiempo Quick Sort (ms)</th>
+                        <th>Tiempo Merge Sort (ms)</th>
+                    </tr>
+                </thead>
+                <tbody id="resultTable"></tbody>
+            </table>
+        </div>
+
+        <h3 class="text-center mt-5">Gráfico de Tiempos</h3>
+        <canvas id="timeChart" width="400" height="200"></canvas>
+    </div>
+
+    <div class="text-center mt-5">
+        <h4>Integrantes del Equipo:</h4>
+        <p>Hernández Ruiz Haydee Michelle, Montoya Garza Luis Ángel, Rueda Martínez Alison Michelle, Silva Sánchez Yamilka Arely</p>
+    </div>
+
+    <script src="2.6script.js"></script>
+</body>
+
+</html>
+

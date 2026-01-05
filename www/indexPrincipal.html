@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú Principal</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #d5c5fc;
+            transition: transform 0.5s ease;
+        }
+
+        h1 {
+            font-weight: bold;
+        }
+
+        .subtitle {
+            font-size: 1.5rem;
+            margin-top: 10px;
+        }
+
+        .btn-custom {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #ffffff;
+            color: rgb(0, 0, 0);
+            border: 2px solid #000000;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        .btn-custom:hover {
+            background-color: #b143ff;
+            border-color: #000000;
+        }
+
+        .btn-custom:active {
+            background-color: #ffffff;
+            border-color: #ffffff;
+            transform: scale(0.95);
+        }
+
+        .logo {
+            width: 150px;
+            height: auto;
+        }
+
+        .header-logos {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container mt-5">
+        <div class="header-logos">
+            <img src="0.1img/uat.png" alt="Logo Izquierda" class="logo">
+            <img src="0.1img/uamm.png" alt="Logo Derecha" class="logo">
+        </div>
+        <h1 class="text-center font-weight-bold">Bienvenido</h1>
+        <p class="text-center subtitle">Proyecto Final: Análisis de Algoritmos</p>
+        <div class="text-center mt-3">
+            <button class="btn btn-custom" onclick="navigateTo('indexParcial1.html')">Parcial 1</button>
+            <button class="btn btn-custom" onclick="navigateTo('indexParcial2.html')">Parcial 2</button>
+            <button class="btn btn-custom" onclick="navigateTo('indexParcial3.html')">Parcial 3</button>
+        </div>
+        <div class="text-center mt-5">
+            <h4>Integrantes del Equipo:</h4>
+            <p>Hernández Ruiz Haydee Michelle, Montoya Garza Luis Ángel, Rueda Martínez Alison Michelle, Silva Sánchez Yamilka Arely</p>
+        </div>
+    </div>
+    <script>
+        function navigateTo(page) {
+            document.body.style.transform = 'translateX(-100%)';
+            setTimeout(function() {
+                window.location.href = page;
+            }, 500);
+        }
+    </script>
+</body>
+
+</html>
